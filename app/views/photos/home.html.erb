@@ -1,10 +1,11 @@
-<p id="notice"><%= notice %></p>
-  <% @photos.each do |photo| %>
-     <div>
-     <%= image_tag photo.image %>
-
-    </div>   
-  <% end %>
+   <div id="photos" class='transitions-enabled'>
+      <% @photos.each do |photo| %>
+    <div class="box"> 
+        <%= image_tag photo.image %>
+    </div>
+  
+      <% end %>
+   </div>  
   
 
 
